@@ -21,16 +21,15 @@
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/772941f193b73929b4837d3b9814c8e8.js";
+      var loaderUrl = buildUrl + "/FB.loader.js";
       var config = {
-        dataUrl: buildUrl + "/9eef25fec99ab653a5c4b7744cc90c7a.data.unityweb",
-        frameworkUrl: buildUrl + "/f4358e22a9710bcbd07ff39920255ad5.js.unityweb",
-        codeUrl: buildUrl + "/42efa1bc4ef1ffe3e040ad351048d46d.wasm.unityweb",
-        symbolsUrl: buildUrl + "/3b34e1a2a6fc72acf275379035bed89d.json.unityweb",
+        dataUrl: buildUrl + "/FB.data.gz",
+        frameworkUrl: buildUrl + "/FB.framework.js.gz",
+        codeUrl: buildUrl + "/FB.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "PROJECTBW",
         productName: "FLAPPY BEN",
-        productVersion: "1.2",
+        productVersion: "1.0",
       };
 
       var container = document.querySelector("#unity-container");
@@ -43,7 +42,6 @@
         container.className = "unity-mobile";
         config.devicePixelRatio = 1;
       }
-      canvas.style.background = "url('" + buildUrl + "/1703481bb73420546cdb52e1787b5b02.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
